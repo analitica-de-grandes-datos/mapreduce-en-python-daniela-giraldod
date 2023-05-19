@@ -5,6 +5,7 @@
 
 import sys
 
+if __name__ == '__main__':
 curkey = None
 total = 0
 
