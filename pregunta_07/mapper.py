@@ -5,5 +5,4 @@
 import sys
 if __name__ == "__main__":
     for line in sys.stdin:
-        fila = line.split()
-        sys.stdout.write("{}\t{}\n".format(fila[0], fila[2]))
+        sys.stdout.write("{}\t{}\t{}\n".format(line.split()[0],line.split()[1],line.split()[2]))
