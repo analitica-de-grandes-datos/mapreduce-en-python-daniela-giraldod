@@ -3,9 +3,9 @@
 #
 import sys       
 
-    l = []  
-    for separar in sys.stdin:
-        separar = separar.strip().split()
-        l.append(separar)
-    for i in sorted(set([i[0] for i in l]),key=lambda x: x[0]):
-        sys.stdout.write('{},{}\n'.format(i,l.count([i])))
+l = []  
+for separar in sys.stdin:
+    separar = separar.strip().split()
+    l.append(separar)
+for i in sorted(set([i[0] for i in l]),key=lambda x: x[0]):
+    sys.stdout.write('{},{}\n'.format(i,l.count([i])))
