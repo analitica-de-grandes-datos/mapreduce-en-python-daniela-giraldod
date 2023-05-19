@@ -6,6 +6,6 @@
 import sys
 
 for fec in sys.stdin:
-  fecha = fec.strip().split("  ")
+  fecha = fec.strip().split("  ")[1]
   month =   fecha.strip().split('-')[1]
   sys.stdout.write("{}\t1\n".format(month))
