@@ -18,8 +18,8 @@ for line in sys.stdin:
 
          sys.stdout.write("{}\t{}\n".format(curkey, nums))
 
-       curkey = key
-       nums = str(int(val))
+        curkey = key
+        nums = str(int(val))
             
 
 sys.stdout.write("{}\t{}\n".format(curkey, nums))
