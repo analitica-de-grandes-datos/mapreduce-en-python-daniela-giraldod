@@ -5,5 +5,7 @@ import sys
 
 #map
 for linea in sys.stdin:
-  base = linea.strip().split("  ")
-  sys.stdout.write("{}\t{}\t{}\n".format(base[0], base[1] ,base[2]))
+  letra = linea.split("  ")[0]
+  fecha = linea.split("  ")[1]
+  num = int(linea.split("  ")[2])
+  sys.stdout.write("{}\t{}\t{}\n".format(letra,fecha,num)
