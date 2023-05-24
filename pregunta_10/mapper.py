@@ -3,10 +3,12 @@
 #
 import sys
 
-for line in sys.stdin:
-   clave, val = line.split("\t")
-   val = list(val.strip().split(","))
-                 
-for letra in val:
+if __name__ == "__main__":
+    for line in sys.stdin:
+      cl, val = line.split("\t")
+      val = list(val.strip().split(","))
+      cl = cl.zfill(4)
+
+      for letra in val:
             
-    sys.stdout.write("{}\t{}\n".format(letra, clave))
+         sys.stdout.write("{}\t{}\n".format(letra, cl))
