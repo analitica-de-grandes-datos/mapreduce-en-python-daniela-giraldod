@@ -13,7 +13,7 @@ for line in sys.stdin:
    if key == curkey:
       nums = nums + "," + str(int(val))
           
-    else:
+   else:
        if curkey is not None:
 
           sys.stdout.write("{}\t{}\n".format(curkey, nums))
