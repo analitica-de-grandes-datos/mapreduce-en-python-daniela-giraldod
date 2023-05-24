@@ -15,4 +15,4 @@ for line in sys.stdin:
 lista = sorted(lista, key=lambda x: (x[2]))  
 lista= lista[0:6] 
 for linea in lista: 
-   sys.stdout.write("{}  {}  {}\n".format(linea[0], linea[1], linea[2]))
+   sys.stdout.write("{}   {}   {}\n".format(linea[0], linea[1], linea[2]))
