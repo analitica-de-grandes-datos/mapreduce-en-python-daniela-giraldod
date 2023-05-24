@@ -2,6 +2,8 @@
 # >>> Escriba el codigo del reducer a partir de este punto <<<
 #
   #armar las listas  
+  
+import sys 
 lista=[]  
 
 for line in sys.stdin:
