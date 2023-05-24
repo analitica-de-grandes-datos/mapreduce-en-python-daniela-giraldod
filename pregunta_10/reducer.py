@@ -14,9 +14,9 @@ for line in sys.stdin:
       nums = nums + "," + str(int(val))
           
     else:
-      if curkey is not None:
+       if curkey is not None:
 
-       sys.stdout.write("{}\t{}\n".format(curkey, nums))
+          sys.stdout.write("{}\t{}\n".format(curkey, nums))
 
         curkey = key
         nums = str(int(val))
